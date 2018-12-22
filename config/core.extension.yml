@@ -14,6 +14,7 @@ module:
   comment: 0
   config: 0
   contact: 0
+  content_moderation: 0
   contextual: 0
   ctools: 0
   datetime: 0
@@ -22,6 +23,7 @@ module:
   editor: 0
   environment_indicator: 0
   environment_indicator_ui: 0
+  extlink: 0
   field: 0
   field_ui: 0
   file: 0
@@ -33,12 +35,14 @@ module:
   layout_discovery: 0
   link: 0
   media: 0
+  media_library: 0
   memcache: 0
   memcache_admin: 0
   menu_ui: 0
   metatag: 0
   metatag_facebook: 0
   metatag_open_graph: 0
+  moderation_sidebar: 0
   node: 0
   options: 0
   page_cache: 0
@@ -63,6 +67,7 @@ module:
   update: 0
   user: 0
   views_ui: 0
+  workflows: 0
   menu_link_content: 1
   pathauto: 1
   views: 10
