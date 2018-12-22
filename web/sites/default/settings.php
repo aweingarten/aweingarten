@@ -36,3 +36,9 @@ if (file_exists($local_settings)) {
  * modifying settings.php.
  */
 $settings['install_profile'] = 'standard';
+
+
+// Automatically generated include for settings managed by ddev.
+if (!empty(getenv('DDEV_PHP_VERSION')) && file_exists($app_root . '/' . $site_path . '/settings.ddev.php')) {
+    include $app_root . '/' . $site_path . '/settings.ddev.php';
+}
