@@ -1,0 +1,14 @@
+uuid: 63f51181-5940-4d06-a443-4fd79a6c5bf5
+name: aweingarten
+mail: aweingarten@users.noreply.github.com
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI

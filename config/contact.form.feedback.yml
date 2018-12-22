@@ -1,0 +1,14 @@
+uuid: dfe25914-050e-4114-8ae0-c4781ecb1a64
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: vymHlgJy26BuI5GGj9-IXjwR3dRC5C0tij4BpWJnoqw
+id: feedback
+label: 'Website feedback'
+recipients:
+  - aweingarten@users.noreply.github.com
+reply: ''
+weight: 0
+message: 'Your message has been sent.'
+redirect: ''
