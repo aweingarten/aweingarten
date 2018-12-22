@@ -1,4 +1,4 @@
-uuid: dfe25914-050e-4114-8ae0-c4781ecb1a64
+uuid: 1eb73528-6f9d-4177-a721-5f19b798e8f2
 langcode: en
 status: true
 dependencies: {  }
@@ -7,7 +7,7 @@ _core:
 id: feedback
 label: 'Website feedback'
 recipients:
-  - aweingarten@users.noreply.github.com
+  - admin@example.com
 reply: ''
 weight: 0
 message: 'Your message has been sent.'
