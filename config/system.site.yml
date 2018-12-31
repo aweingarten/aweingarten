@@ -1,6 +1,6 @@
-uuid: 79527942-efb6-47f9-90a6-1c683e207e74
-name: 'Drush Site-Install'
-mail: admin@example.com
+uuid: bd4daee9-be0b-4ed7-b96e-588a24ac0999
+name: 'Adam Weingarten''s Blog'
+mail: adam@weingarten.me
 slogan: ''
 page:
   403: ''
@@ -12,3 +12,4 @@ langcode: en
 default_langcode: en
 _core:
   default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI
+mail_notification: ''

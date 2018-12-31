@@ -7,11 +7,13 @@ module:
   block_content: 0
   breakpoint: 0
   chosen: 0
+  chosen_field: 0
   chosen_lib: 0
   ckeditor: 0
   coffee: 0
   color: 0
   comment: 0
+  components: 0
   config: 0
   contact: 0
   content_moderation: 0
@@ -23,7 +25,6 @@ module:
   editor: 0
   environment_indicator: 0
   environment_indicator_ui: 0
-  extlink: 0
   field: 0
   field_ui: 0
   file: 0
@@ -37,7 +38,6 @@ module:
   media: 0
   media_library: 0
   memcache: 0
-  memcache_admin: 0
   menu_ui: 0
   metatag: 0
   metatag_facebook: 0
@@ -47,17 +47,11 @@ module:
   options: 0
   page_cache: 0
   path: 0
-  purge: 0
-  purge_drush: 0
-  purge_processor_cron: 0
-  purge_processor_lateruntime: 0
-  purge_queuer_coretags: 0
-  purge_tokens: 0
-  purge_ui: 0
   quickedit: 0
   rdf: 0
   search: 0
   shortcut: 0
+  syslog: 0
   system: 0
   taxonomy: 0
   text: 0
