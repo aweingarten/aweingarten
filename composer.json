@@ -1,5 +1,5 @@
 {
-    "name": "pantheon-systems/example-drops-8-composer",
+    "name": "aweingarten/aweingarten",
     "description": "Install drops-8 with Composer on Pantheon.",
     "type": "project",
     "license": "MIT",
@@ -11,6 +11,7 @@
     ],
     "require": {
         "php": ">=7.0.8",
+        "balbuf/drupal-libraries-installer": "^1.0",
         "composer/installers": "^1.0.20",
         "cweagans/composer-patches": "^1.0",
         "drupal-composer/drupal-scaffold": "^2.0.1",
@@ -21,6 +22,7 @@
         "drupal/components": "^1.0",
         "drupal/config_direct_save": "^1.0",
         "drupal/config_installer": "^1.0",
+        "drupal/config_split": "^1.4",
         "drupal/console": "^1",
         "drupal/core": "^8",
         "drupal/environment_indicator": "^3.3",
@@ -35,6 +37,8 @@
         "drupal/token": "^1.5",
         "drush-ops/behat-drush-endpoint": "^0.0.5",
         "drush/drush": "~8",
+        "fourkitchens/emulsify": "^3.1",
+        "harvesthq/chosen": "^1.8",
         "pantheon-systems/quicksilver-pushback": "~1",
         "rvtraveller/qs-composer-installer": "^1.1",
         "webflo/drupal-core-strict": "^8",
@@ -50,7 +54,9 @@
         "jcalderonzumba/mink-phantomjs-driver": "^0.3.1",
         "drupal/drupal-extension": "^3.1",
         "phpunit/phpunit": "^4.8",
-        "symfony/css-selector": "^2.8"
+        "symfony/css-selector": "^2.8",
+        "sensiolabs/security-checker": " ^5.0.0",
+        "zaporylie/composer-drupal-optimizations": "^1.0"
     },
     "conflict": {
             "drupal/drupal": "*"
@@ -92,7 +98,13 @@
             "web/modules/contrib/{$name}": ["type:drupal-module"],
             "web/profiles/contrib/{$name}": ["type:drupal-profile"],
             "web/themes/contrib/{$name}": ["type:drupal-theme"],
-            "drush/contrib/{$name}": ["type:drupal-drush"]
+            "drush/contrib/{$name}": ["type:drupal-drush"],
+            "web/libraries/{$name}": [
+                "type:drupal-library",
+                "type:bower-asset",
+                "type:npm-asset",
+                "harvesthq/chosen"
+            ]
         },
         "build-env": {
             "install-cms": [
