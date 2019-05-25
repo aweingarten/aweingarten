@@ -37,8 +37,29 @@ if (file_exists($local_settings)) {
  */
 $settings['install_profile'] = 'standard';
 
+// Grab the base variables that give us some readable conditionals.
+include __DIR__ . "/settings/base_variables.php";
 
 // Automatically generated include for settings managed by ddev.
-if (!empty(getenv('DDEV_PHP_VERSION')) && file_exists($app_root . '/' . $site_path . '/settings.ddev.php')) {
+if ($is_ddev) {
     include $app_root . '/' . $site_path . '/settings.ddev.php';
+}
+
+// Include the config split settings.
+$config_split_settings = __DIR__ . "/settings/config_split.php";
+$has_config_split = file_exists($config_split_settings);
+if ($has_config_split) {
+    include $app_root . '/' . $site_path . '/settings.ddev.php';
+}
+
+
+
+
+
+/**
+ * If there is a local settings file, then include it
+ */
+$local_settings = __DIR__ . "/settings.local.php";
+if (file_exists($local_settings)) {
+    include $local_settings;
 }

@@ -20,7 +20,7 @@ ini_set('session.gc_divisor', 100);
 ini_set('session.gc_maxlifetime', 200000);
 ini_set('session.cookie_lifetime', 2000000);
 
-$settings['hash_salt'] = 'SojTdzJtaOwHJRQyfTctZSvYbeMKyAfHQbevASXWIuTRFvBBELsFajvyJDvsIRIK';
+$settings['hash_salt'] = 'iZJkidCstEeBtXwTGdvNCXIIMpiEAFrWFPhLegBKPDmrRHeWoqjXuciZLDUwEGxO';
 
 $settings['file_scan_ignore_directories'] = [
   'node_modules',
@@ -33,6 +33,9 @@ $settings['skip_permissions_hardening'] = TRUE;
 // This will ensure the site can only be accessed through the intended host names.
 // Additional host patterns can be added for custom configurations.
 $settings['trusted_host_patterns'] = ['.*'];
+
+// Don't use Symfony's APCLoader. ddev includes APCu; Composer's APCu loader has better performance.
+$settings['class_loader_auto_detect'] = FALSE;
 
 // This specifies the default configuration sync directory.
 if (empty($config_directories[CONFIG_SYNC_DIRECTORY])) {
