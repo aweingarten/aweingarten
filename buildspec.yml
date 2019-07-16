@@ -1,0 +1,23 @@
+version: 0.2
+
+env:
+  variables:
+    key: "value"
+    key: "value"
+  parameter-store:
+    LOGIN_PASSWORD: /CodeBuild/dockerLoginPassword
+
+  git-credential-helper: yes
+
+phases:
+  pre_build:
+    commands:
+      - echo Entered the pre_build phase...
+      - docker login –u User –p $LOGIN_PASSWORD
+  build:
+    commands:
+      - composer install
+cache:
+  paths:
+    - path
+    - path
